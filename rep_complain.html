@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Bihar Police Online Complaint</title>
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
+	<link rel="icon" href="img/logo.jpg" type="image/jpeg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="w3-light-grey">
+	<div class="w3-container w3-card" style="background: #efae36; height: 5px;"></div>
+	<div class="w3-white w3-container w3-card" style="padding-bottom: 18px;">
+		<div style="margin: 15px 70px;">
+			<img src="img/logo4.jpg" align="left">
+			<img src="img/logo.jpg" height="100" width="90" align="right">
+			<div>
+				<span style="font-size: 22px; color: #454640; margin-right: 15px;" class="w3-right">Control Room</span>
+				<span style="font-size: 35px; color: #183883; position: absolute; right: 190px; top: 50px;">Call Us: 100</span>
+				<span style="font-size: 20px; color: #183883; position: absolute; right: 190px; top: 95px;">dgp-bih@nic.in</span>
+			</div>
+		</div>
+	</div>
+	<div class="w3-bar w3-card w3-text-white w3-center" style="background: #183883; font-size: 20px; padding: 0px 55px">
+  		<a href="http://localhost/OnlineFirSystem/" class="w3-bar-item w3-button w3-hover-blue-grey  w3-hover-shadow"><i class="fa fa-home"></i> Home</a>
+  		<a href="rep_complain.html" class="w3-bar-item w3-button w3-hover-blue-grey  w3-hover-shadow"><i class="fa fa-wpforms" aria-hidden="true"></i> Register a Complaint</a>
+  		<a href="https://www.icds-wcd.nic.in/nnm/home.htm" class="w3-bar-item w3-button w3-hover-blue-grey  w3-hover-shadow"><i class="fa fa-child"></i> Women and Child Safety</a>
+  		<a href="http://biharpolice.bih.nic.in" class="w3-bar-item w3-button w3-hover-blue-grey  
+  		w3-hover-shadow"><i class="fa fa-legal"></i>Bihar Police</a>
+  		<a href="view_fir.html" class="w3-bar-item w3-button w3-hover-blue-grey  w3-hover-shadow"><i class="fa fa-legal"></i> View Complaint</a>
+  		<a href="dos_dont.html" class="w3-bar-item w3-button w3-hover-blue-grey  w3-hover-shadow"><i class="fa fa-support"></i> Safety Tips</a>
+  		<a href="Contact.html" class="w3-bar-item w3-button w3-hover-blue-grey w3-hover-shadow"><i class="fa fa-phone"></i> Contact Us</a>
+	</div>
+	<div style="margin:0px 70px; width: 90%;height: 100%; background: white; padding: 40px;" class="w3-card w3-center">
+		<div class="w3-bar w3-blue w3-center" style="width: 700px;">
+		  <h3>Register A Complaint</h3>
+		</div>
+		<center>
+			<form class="w3-container w3-padding w3-border" style="max-width: 700px" method="post" action="reg_complain.php" autocomplete="off">
+			  	<label class="w3-large w3-left">District</label>
+			  	<select class="w3-select w3-border w3-round-large" name="region">
+				    <option value="" class="w3-large" required="required" disabled selected>Choose your option</option>
+				    <option value="Ara" class="w3-large">Ara</option>
+				    <option value="Buxar" class="w3-large">Buxar</option>
+				    <option value="East_Champaran" class="w3-large">East Champaran</option>
+				    <option value="Gaya" class="w3-large">Gaya</option>
+				    <option value="Muzaffarpur" class="w3-large">Muzaffarpur</option>
+				    <option value="Nalanda" class="w3-large">Nalanda</option>
+				    <option value="Patna" class="w3-large">Patna</option>
+				    <option value="Rohtas" class="w3-large">Rohtas</option>
+				    <option value="Vaishali" class="w3-large">Vaishali</option>
+				</select>
+			  	<p><label class="w3-large w3-left">Name</label>
+			  	<input class="w3-border w3-round-large w3-input" type="text" placeholder="Your Name" required="required" name="name"></p>
+			  	<p><label class="w3-large w3-left">Email</label>
+			  	<input class="w3-border w3-round-large w3-input" type="Email" placeholder="Your Correct Email Address" required="required" name="email"></p>
+			  	<p><label class="w3-large w3-left">Complaint Type</label>
+			  	<select class="w3-select w3-border w3-round-large" name="subject">
+				    <option value="" class="w3-large" required="required" disabled selected>Choose your option</option>
+				    <option value="Murder" class="w3-large">Murder</option>
+				    <option value="Theft" class="w3-large">Theft</option>
+				    <option value="Snatching" class="w3-large">Snatching</option>
+				    <option value="Robbery" class="w3-large">Robbery</option>
+				    <option value="Eve Teasing" class="w3-large">Eve Teasing</option>
+				    <option value="Rape" class="w3-large">Rape</option>
+				    <option value="Dowry" class="w3-large">Dowry</option>
+				    <option value="Domestic Violence" class="w3-large">Domestic Violence</option>
+				    <option value="Drug Abuse" class="w3-large">Drug Abuse</option>
+				    <option value="Kidnapping" class="w3-large">Kidnapping</option>
+				    <option value="Others" class="w3-large">Others</option>
+				</select>
+			  	<p><label class="w3-large w3-left">Mobile</label>
+			  	<input class="w3-border w3-round-large w3-input" type="Number" placeholder="Your Current Mobile Number"  required="required" name="mobile"></p>
+			  	<p><label class="w3-large w3-left">Address</label>
+			  	<textarea name="address" rows="2" cols="10" class="w3-input w3-border w3-round-large" placeholder="Your Current Address Without District and State" required="required" name="address"></textarea></p>
+			  	<p><label class="w3-large w3-left">Your Complaint!</label>
+			  	<textarea name="complain" rows="3" cols="10" class="w3-input w3-border w3-round-large" placeholder="Your Detailed Complaint!" required="required" name="complain"></textarea></p>
+			  	<p class="w3-right"><button type="submit" class="w3-button w3-blue w3-large">Submit</button></p>
+			</form>
+			<br>
+		</center>
+	</div>
+	<div class="w3-bar" style="background: #183883;">
+		<p class="w3-center w3-text-white">This Site is Designed, Developed, Hosted and Maintained by Akhil and Pratyush.
+		This Site is the Prototype of the Actual Site. 
+		</p>
+	</div>
+</body>
+</html>
